@@ -1,5 +1,5 @@
 "use client";
-import { FaEnvelope, FaLinkedin, FaGithub, FaPhone } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaGithub, FaPhone, FaWhatsapp } from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -16,7 +16,7 @@ export default function Contact() {
         </div>
 
         {/* CONTACT ICONS */}
-        <div className="mt-12 flex flex-col md:flex-row gap-8 justify-center items-center text-sm">
+        <div className="mt-12 flex flex-wrap gap-8 justify-center items-center text-sm">
 
           {/* EMAIL */}
           <a
@@ -42,6 +42,20 @@ export default function Contact() {
             <span className="font-medium">Call</span>
           </a>
 
+          {/* WHATSAPP */}
+          <a
+            href="https://wa.me/8801746710577"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-3 text-gray-400 hover:text-white transition-colors"
+          >
+            <div className="p-4 rounded-full bg-white/5 group-hover:bg-[#25D366]/20 
+            group-hover:text-[#25D366] transition-colors">
+              <FaWhatsapp className="text-xl" />
+            </div>
+            <span className="font-medium">WhatsApp</span>
+          </a>
+
           {/* LINKEDIN */}
           <a
             href="https://www.linkedin.com/in/najmunnaharanjum"
@@ -49,8 +63,8 @@ export default function Contact() {
             rel="noopener noreferrer"
             className="group flex items-center gap-3 text-gray-400 hover:text-white transition-colors"
           >
-            <div className="p-4 rounded-full bg-white/5 group-hover:bg-[#c9a86a]/20 
-            group-hover:text-[#c9a86a] transition-colors">
+            <div className="p-4 rounded-full bg-white/5 group-hover:bg-[#0077B5]/20 
+            group-hover:text-[#0077B5] transition-colors">
               <FaLinkedin className="text-xl" />
             </div>
             <span className="font-medium">LinkedIn</span>

@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
+import { FaGithub, FaLinkedin, FaTwitter, FaFacebook, FaDownload } from "react-icons/fa";
+
 export default function Hero() {
   const imageRef = useRef(null);
   const blob1Ref = useRef(null);
@@ -42,11 +44,11 @@ export default function Hero() {
       <div ref={blob1Ref} className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#c9a86a]/10 rounded-full blur-[100px] -z-10"></div>
       <div ref={blob2Ref} className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-[100px] -z-10"></div>
 
-      <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 w-full">
+      <div className="max-w-5xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 w-full">
 
         {/* TEXT */}
         <div className="flex-1 text-center md:text-left space-y-6">
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -55,7 +57,7 @@ export default function Hero() {
             Welcome to my portfolio
           </motion.p>
 
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -67,32 +69,57 @@ export default function Hero() {
             </span>
           </motion.h1>
 
-          <motion.p 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="text-lg text-gray-400 max-w-lg mx-auto md:mx-0"
+            className="flex flex-col gap-2"
           >
-            A passionate Full Stack Developer focused on building clean, scalable, and beautifully designed digital experiences.
-          </motion.p>
+            <h2 className="text-xl md:text-2xl text-gray-300 font-medium">
+              Full Stack Web Developer
+            </h2>
+            <p className="text-gray-400 max-w-lg mx-auto md:mx-0 leading-relaxed">
+              Building clean, scalable, and beautifully designed digital experiences with modern technologies.
+            </p>
+          </motion.div>
 
-          <motion.div 
+
+          {/* ACTION BUTTONS */}
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="flex gap-4 pt-4 justify-center md:justify-start"
+            className="flex flex-wrap gap-4 pt-4 justify-center md:justify-start"
           >
             <a href="#projects" className="px-8 py-3 rounded-full text-black font-semibold bg-[#c9a86a] hover:shadow-[0_0_20px_rgba(201,168,106,0.4)] transition-all">
               View Projects
             </a>
-            <a href="#contact" className="px-8 py-3 rounded-full border border-white/20 text-white hover:bg-white/5 transition-all">
-              Contact Me
+            <a href="/resume.pdf" target="_blank" className="flex items-center gap-2 px-8 py-3 rounded-full border border-[#c9a86a] text-[#c9a86a] hover:bg-[#c9a86a]/10 transition-all font-semibold">
+              <FaDownload /> Resume
+            </a>
+          </motion.div>
+
+          {/* SOCIAL LINKS */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            className="flex gap-6 justify-center md:justify-start pt-6"
+          >
+            <a href="https://github.com/nnanjum1" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#c9a86a] transition-colors text-2xl">
+              <FaGithub />
+            </a>
+            <a href="https://www.linkedin.com/in/najmunnaharanjum" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#c9a86a] transition-colors text-2xl">
+              <FaLinkedin />
+            </a>
+            <a href="https://www.facebook.com/share/16os9p6gKK/" className="text-gray-400 hover:text-[#c9a86a] transition-colors text-2xl">
+              <FaFacebook />
             </a>
           </motion.div>
         </div>
 
         {/* IMAGE */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -117,5 +144,6 @@ export default function Hero() {
 
       </div>
     </section>
+
   );
 }

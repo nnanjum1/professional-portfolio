@@ -17,7 +17,8 @@ export default function TechStack() {
   ];
 
   return (
-    <section id="tech" className="py-24 bg-gradient-to-b from-[#0b1220] to-[#0f1a2b] px-6 relative">
+    <section id="skills" className="py-24 bg-gradient-to-b from-[#0b1220] to-[#0f1a2b] px-6 relative">
+
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold title inline-block relative">
