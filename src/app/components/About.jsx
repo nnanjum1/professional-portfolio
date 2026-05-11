@@ -12,13 +12,15 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
             <p className="text-gray-300 leading-relaxed text-lg">
-              I am a <span className="text-[#c9a86a] font-semibold">Full Stack Web Developer</span> passionate about building modern, responsive, and user-focused web applications. My journey into programming started with a curiosity about how the web works, which led me to pursue a B.Sc in Computer Science & Engineering.
+              I am a <span className="text-[#c9a86a] font-semibold">Full Stack Web Developer</span> who enjoys learning and building practical solutions through real projects. My interest in web development grew during my CSE studies, where I became curious about how websites and applications actually work behind the scenes.
             </p>
+
             <p className="text-gray-400 leading-relaxed">
-              I specialize in creating clean UI experiences and functional backend systems using technologies like <span className="text-white">Next.js, React, JavaScript, and PHP with MySQL</span>. I enjoy transforming complex problems into simple, beautiful, and intuitive designs.
+              Over time, I have gained hands-on experience with <span className="text-white">Next.js, React, JavaScript, and PHP with MySQL</span>. I focus on writing clean, simple code and creating user-friendly interfaces. I am still growing as a developer, but I enjoy improving my skills step by step and turning ideas into working applications.
             </p>
+
             <p className="text-gray-400 leading-relaxed">
-              I have hands-on experience developing real-world projects such as eCommerce systems, issue tracking dashboards, and full-stack management applications with features like authentication, role-based access, and API integration.
+              I have built several real-world academic and personal projects, including management systems, eCommerce-style product pages, and apps with features like authentication, product handling, cart systems, and form-based interactions. These projects have helped me understand both frontend and basic backend development in a practical way.
             </p>
           </div>
 
